@@ -52,8 +52,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white text-[26px] lg:text-[36px] font-bold pointer-events-auto cursor-pointer flex'>
-            FK
+          <p className='text-green-500 text-[26px] lg:text-[36px] font-bold neon-text pointer-events-auto cursor-pointer flex'>
+           Green Art
           </p>
         </Link>
 
@@ -62,8 +62,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`relative flex items-center ${
-                active === nav.id ? "text-white" : "text-slate-500"
-              } hover:text-white text-[18px] lg:text-[24px] font-bold pointer-events-auto cursor-pointer`}
+                active === nav.id ? "text-green-500" : "text-white"
+              } hover:text-white text-[18px] lg:text-[24px] font-bold pointer-events-auto cursor-pointer neon-text`}
               onClick={() => setActive(nav.id)}
             >
               {active === nav.id && (
